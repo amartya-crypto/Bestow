@@ -1,0 +1,26 @@
+{
+  "short_name": "Bestow",
+  "name": "Bestow: Sustainable Giving",
+  "description": "A comprehensive platform to promote sustainable living by encouraging the donation and reuse of items.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#2a2a4e",
+  "theme_color": "#3a2f5c",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

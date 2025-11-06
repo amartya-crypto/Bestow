@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAMAAAC3Ycb+AAAASFBMVEUAKADycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC7ycC6s5CdbAAAAF3RSTlMAgMC/gL9/31B/QCC/QCCvkI9w72B0TNEIAAADG0lEQVR42u3d24KiMBiGYQoKKoKgoqDi/q9sY2tIx9q22Xbsw9T/zV3MMlcmEwAAAAAAAAAAAAAAAACA/6R7PmM4/d4wHH9v+Pz+Gz7/9Q3/++03fP/jGz5/dMONEUPy/19/w4/Hh5/9m2G49/cNDx4b/vyjG/58bDj8/z08ePz9m2H4/FfDcO/fB+45+6vhe/j55+M/v35b+PnnY//h/Xth+P3fDcO3P2E4/h6G4fffn+Hffz88/vSH4ff/tOE/Pz88/vyn4fefv4cPP38Pj3/9s+Hn/7Ph59+G4fHjnx++h4f//B4e//7nww/w8PAnMPz5Dxj+/Jsx/PkvYPjzb2D48x8w/Pk3YfjzHzD8+Tdg+PNvYMj//g3M8PgnMHyG/+f+Dczw+CewfP4PzPD4J7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD4F7D8/g9s8PgnMPz+D2zw+Bew/P4PbPD450vM8PgnsHz+D8zw+CewfP4PzPD4J7B8/g/M8PgnsHz+D8zw+CewfP4PzPD4J7B8/g/M8PgnsHz+D8zw+CewfP4PzPB4/AvM8PgnMPz5PzDD4/8FZn78E5j58U9g5sc/gZkf/wRmfvwTmPnxT2Dmxz+BmT//B2b4/BMYvv8HZvj8E5j+/B+Y4fFPYOZ//wZmfvwTmPnx/wp+A/M/3mH4/j/D8P3/DcOf/wXD8/8Fw//8NcP/fA3D/3gNwwfw/T8M338Mwx/8y/B8/TUM//8tDP/5v2G4/1/g4V/g4Z/h4T/D8Id/gIf/CcP/fAXD/3wFw1/g4X/A8B/g4X/A8D/g4T/A8D/g4f/dMAAAAAAAAAAAAAAAAADgH31TAnG3H2fAAAAAAElFTkSuQmCC" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestow: Sustainable Giving</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#3a2f5c">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes pulse-glow {
+        0%, 100% {
+          box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+        }
+        50% {
+          box-shadow: 0 0 25px rgba(139, 92, 246, 0.8);
+        }
+      }
+      .animate-pulse-glow {
+        animation: pulse-glow 2.5s infinite ease-in-out;
+      }
+      .animate-fade-in {
+        animation: fadeIn 1s ease-out forwards;
+      }
+      .animate-on-scroll {
+        opacity: 0;
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+      .is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .animate-fade-in-up {
+        transform: translateY(20px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#2a2a4e] text-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, err => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
